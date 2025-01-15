@@ -10,15 +10,6 @@
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-    <style>
-        .carousel-item {
-            display: none;
-        }
-
-        .carousel-item.active {
-            display: block;
-        }
-    </style>
     <script type="module" defer>
         const items = document.querySelectorAll('.carousel-item');
         let currentItem = 0;
@@ -59,122 +50,52 @@
     </header>
 
     <div class="container mx-auto p-4">
+        
+        <h2 class="text-lg font-bold mb-2">
+            Refeições
+        </h2>
 
-        <!-- <section class="w-full h-min mb-8">
-            <h2 class="font-bold italic">Promoções</h2>
+        <section class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-14">
 
-            <div class="container mx-auto py-4 pb-8">
-                <div class="relative w-full max-w-full mx-auto">
-                    <div class="carousel-item active">
-                        <div class="bg-white rounded-lg w-full min-w-full h-62 overflow-hidden shadow-md flex flex-col">
-                            <img alt="Imagem de um prato de comida gourmet com uma apresentação elegante"
-                                class="w-full h-24 md:h-36 object-cover"
-                                src="https://storage.googleapis.com/a1aa/image/EGBCZ70oxUaDN10hD6aoJyh6J5BysfMOtSKMUnnaH2508e7TA.jpg" />
-                            <div class="p-2 flex flex-col justify-between">
-                                <div>
-                                    <h2 class="text-lg font-bold text-gray-800">
-                                        Prato Especial 1
-                                    </h2>
-                                    <p class="text-gray-600 mt-1 text-xs">
-                                        Descrição detalhada do prato especial 1.
-                                    </p>
-                                </div>
-
-                                <span class="text-gray-800 line-through italic text-red-600 font-bold mt-2">
-                                    R$ 49,90
-                                </span>
-                                <span class="text-gray-800 text-green-600 font-bold text-lg">
-                                    R$ 35,90
-                                </span>
-                            </div>
-                        </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+                <img alt="Imagem de um prato de comida gourmet com uma apresentação elegante"
+                    class="w-full h-20 sm:h-24 object-cover" height="100"
+                    src="https://storage.googleapis.com/a1aa/image/6GvcfWS7kZSYUSQjtmv2B4wIS9nf6rjqqn12JTKluRABF77TA.jpg"
+                    width="200" />
+                <div class="p-2 flex flex-col justify-between">
+                    <div>
+                        <h2 class="text-sm font-bold text-gray-800">
+                            Contra Filé
+                        </h2>
+                        <p class="text-red-600 font-bold mt-1 text-sm">
+                            Arroz, feijão, fritas, salada simples<!-- Descrição detalhada do prato especial 3. -->
+                        </p>
                     </div>
-                    <div class="carousel-item">
-                        <div class="bg-white rounded-lg w-full min-w-full h-62 overflow-hidden shadow-md flex flex-col">
-                            <img alt="Imagem de um prato de comida gourmet com uma apresentação elegante"
-                                class="w-full h-24 md:h-36 object-cover"
-                                src="https://storage.googleapis.com/a1aa/image/T0Sa63FeDqTzPCDQI2vADALSaPGiHDjpj1xi15YqVXfo597TA.jpg" />
-                            <div class="p-2 flex flex-col justify-between">
-                                <div>
-                                    <h2 class="text-lg font-bold text-gray-800">
-                                        Prato Especial 2
-                                    </h2>
-                                    <p class="text-gray-600 mt-1 text-xs">
-                                        Descrição detalhada do prato especial 2.
-                                    </p>
-                                </div>
-                
-                                <span class="text-gray-800 line-through italic text-red-600 font-bold mt-2">
-                                    R$ 49,90
-                                </span>
-                                <span class="text-gray-800 text-green-600 font-bold text-lg">
-                                    R$ 35,90
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="bg-white rounded-lg w-full min-w-full h-62 overflow-hidden shadow-md flex flex-col">
-                            <img alt="Imagem de um prato de comida gourmet com uma apresentação elegante"
-                                class="w-full h-24 md:h-36 object-cover"
-                                src="https://storage.googleapis.com/a1aa/image/6GvcfWS7kZSYUSQjtmv2B4wIS9nf6rjqqn12JTKluRABF77TA.jpg" />
-                            <div class="p-2 flex flex-col justify-between">
-                                <div>
-                                    <h2 class="text-lg font-bold text-gray-800">
-                                        Prato Especial 3
-                                    </h2>
-                                    <p class="text-gray-600 mt-1 text-xs">
-                                        Descrição detalhada do prato especial 3.
-                                    </p>
-                                </div>
-                
-                                <span class="text-gray-800 line-through italic text-red-600 font-bold mt-2">
-                                    R$ 49,90
-                                </span>
-                                <span class="text-gray-800 text-green-600 font-bold text-lg">
-                                    R$ 35,90
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="bg-white rounded-lg w-full min-w-full h-62 overflow-hidden shadow-md flex flex-col">
-                            <img alt="Imagem de um prato de comida gourmet com uma apresentação elegante"
-                                class="w-full h-24 md:h-36 object-cover"
-                                src="https://storage.googleapis.com/a1aa/image/6GvcfWS7kZSYUSQjtmv2B4wIS9nf6rjqqn12JTKluRABF77TA.jpg" />
-                            <div class="p-2 flex flex-col justify-between">
-                                <div>
-                                    <h2 class="text-lg font-bold text-gray-800">
-                                        Prato Especial 4
-                                    </h2>
-                                    <p class="text-gray-600 mt-1 text-xs">
-                                        Descrição detalhada do prato especial 4.
-                                    </p>
-                                </div>
-                
-                                <span class="text-gray-800 line-through italic text-red-600 font-bold mt-2">
-                                    R$ 49,90
-                                </span>
-                                <span class="text-gray-800 text-green-600 font-bold text-lg">
-                                    R$ 35,90
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <button
-                        class="absolute top-1/4 md:top-1/2 size-8 -left-2 md:-left-10 hover:-translate-x-1 transition-all ease-in-out transform -translate-y-1/2 md:bg-gray-800 text-center items-center justify-center text-white rounded-full"
-                        id="prev">
-                        <i class="fas opacity-50 fa-chevron-left"></i>
-                    </button>
-                    <button
-                        class="absolute top-1/4 md:top-1/2 size-8 -right-2 md:-right-10 hover:translate-x-1 transition-all ease-in-out transform -translate-y-1/2 md:bg-gray-800 text-center items-center justify-center text-white rounded-full"
-                        id="next">
-                        <i class="fas opacity-50 fa-chevron-right"></i>
-                    </button>
+                    <span class="text-gray-800 font-bold mt-2 text-sm">
+                        R$ 69,90
+                    </span>
                 </div>
             </div>
-
-        </section> -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+                <img alt="Imagem de um prato de comida gourmet com uma apresentação elegante"
+                    class="w-full h-20 sm:h-24 object-cover" height="100"
+                    src="https://storage.googleapis.com/a1aa/image/6GvcfWS7kZSYUSQjtmv2B4wIS9nf6rjqqn12JTKluRABF77TA.jpg"
+                    width="200" />
+                <div class="p-2 flex flex-col justify-between">
+                    <div>
+                        <h2 class="text-sm font-bold text-gray-800">
+                            Camarão Frito
+                        </h2>
+                        <p class="text-red-600 font-bold mt-1 text-sm">
+                            Arroz, feijão, fritas, salada simples<!-- Descrição detalhada do prato especial 4. -->
+                        </p>
+                    </div>
+                    <span class="text-gray-800 font-bold mt-2 text-sm">
+                        R$ 79,90
+                    </span>
+                </div>
+            </div>
+        </section>
 
         <h2 class="text-lg font-bold mb-2">
             Porções
@@ -342,7 +263,7 @@
                 <div class="p-2 flex flex-col justify-between">
                     <div>
                         <h2 class="text-sm font-bold text-gray-800">
-                            Calabresa Aceblada
+                            Calabresa Acebolada
                         </h2>
                         <p class="text-gray-600 mt-1 text-xs">
                             ...<!-- Descrição detalhada do prato especial 3. -->
@@ -602,51 +523,7 @@
             </div>
         </section>
 
-        <h2 class="text-lg font-bold mb-2">
-            Refeições
-        </h2>
-
-        <section class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-14">
-
-            <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
-                <img alt="Imagem de um prato de comida gourmet com uma apresentação elegante"
-                    class="w-full h-20 sm:h-24 object-cover" height="100"
-                    src="https://storage.googleapis.com/a1aa/image/6GvcfWS7kZSYUSQjtmv2B4wIS9nf6rjqqn12JTKluRABF77TA.jpg"
-                    width="200" />
-                <div class="p-2 flex flex-col justify-between">
-                    <div>
-                        <h2 class="text-sm font-bold text-gray-800">
-                            Prato Especial 3
-                        </h2>
-                        <p class="text-gray-600 mt-1 text-xs">
-                            ...<!-- Descrição detalhada do prato especial 3. -->
-                        </p>
-                    </div>
-                    <span class="text-gray-800 font-bold mt-2 text-sm">
-                        R$ 69,90
-                    </span>
-                </div>
-            </div>
-            <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
-                <img alt="Imagem de um prato de comida gourmet com uma apresentação elegante"
-                    class="w-full h-20 sm:h-24 object-cover" height="100"
-                    src="https://storage.googleapis.com/a1aa/image/6GvcfWS7kZSYUSQjtmv2B4wIS9nf6rjqqn12JTKluRABF77TA.jpg"
-                    width="200" />
-                <div class="p-2 flex flex-col justify-between">
-                    <div>
-                        <h2 class="text-sm font-bold text-gray-800">
-                            Prato Especial 4
-                        </h2>
-                        <p class="text-gray-600 mt-1 text-xs">
-                            ...<!-- Descrição detalhada do prato especial 4. -->
-                        </p>
-                    </div>
-                    <span class="text-gray-800 font-bold mt-2 text-sm">
-                        R$ 79,90
-                    </span>
-                </div>
-            </div>
-        </section>
+        
         <h2 class="text-lg font-bold mb-2">
             Sucos
         </h2>
